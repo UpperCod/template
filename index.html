@@ -21,8 +21,8 @@
             <a href="https://github.com/uppercod/atomico">
                 <button class="Header link">🔗 Github Atomico</button>
             </a>
-            <a href="https://github.com/uppercod/atomico">
-                <button class="Header link">🔗 Github Component</button>
+            <a href="https://github.com/uppercod/atomico-starter-component">
+                <button class="Header link">🔗 Github this component</button>
             </a>
         </div>
     </header>
@@ -32,7 +32,30 @@
         </div>
         <div class="Preview content">
             <h1>atomico-starter-component</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vitae dolorem tempore accusantium impedit assumenda hic ipsa? Rem sapiente non hic eaque fugiat tenetur, recusandae omnis vero! Perspiciatis, doloribus minima.</p>
+
+            <p>This is a small skeleton to create distributable components based on <a href="https://github.com/uppercod/atomico">Atomico</a>.</p>
+
+            <p>The component is packaged thanks to <code>rollup.config.js</code>, you can execute the commands</p>
+
+<pre>
+# alias rollup -c -w
+npm run watch
+# alias rollup -c
+npm run build</pre>
+
+            <h2>Directory observations</h2>
+
+            <h3>index.html</h3>
+
+            <p>It is recommended when packaging the component, print it inside the index.html.</p>
+
+            <h3>/static</h3>
+
+            <p>by default it has the atomic logo and the base style for the index.html.</p>
+
+            <h2>Dependency observations</h2>
+
+            <p>By default Atomico is recommended to stay as an external dependency, you can do without <code>cssthis-tag</code>, especially if you work directly with shadow-dom.</p>
         </div>
     </div>
     

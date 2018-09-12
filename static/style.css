@@ -46,8 +46,47 @@ a {
     box-shadow: 0px 12px 22px rgba(0, 0, 0, .05);
     display: flex;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.Preview.frame:before {
+    padding: .3rem 1rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    font-size: 12px;
+    content: "Web component";
+    color: white;
+    background: rgb(105, 91, 237);border-bottom-right-radius: 5px;
 }
 
 .Preview.content {
     width: 100%;
+}
+
+.Preview.content pre {
+    width: 100%;
+    background: #232329;
+    border-radius: 5px;
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.Preview.content code {
+    background: #232329;
+    color: white;
+    padding: .1rem .5rem;
+    border-radius: 5px;
+}
+
+.Preview.content a {
+    font-weight: bold;
+    background: rgb(105, 91, 237);
+    padding: .1rem .5rem;
+    border-radius: 10px;
+    font-size: .9em;
+    color: white;
 }
