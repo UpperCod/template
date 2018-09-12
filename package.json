@@ -1,9 +1,10 @@
 {
   "name": "atomico-starter-component",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This is a small skeleton to create distributable components based on Atomico",
   "main": "dist/atomico-starter-component.js",
   "umd:main": "dist/atomico-starter-component.umd.js",
+  "umd:es5": "dist/atomico-starter-component.es5.umd.js",
   "module": "dist/atomico-starter-component.m.js",
   "source": "src/index.js",
   "author": "Matias Trujillo Olivares",
@@ -17,7 +18,7 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "atomico": "^0.0.5"
+    "atomico": "^0.0.9"
   },
   "devDependencies": {
     "cssnano": "^4.1.0",

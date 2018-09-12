@@ -95,9 +95,9 @@ array-unique@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.2.1.tgz#a1d97ccafcbc2625cc70fadceb36a50c58b01a53"
 
-atomico@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/atomico/-/atomico-0.0.5.tgz#ba57eadfe8ba5b0f5f803357c759d618af56fe82"
+atomico@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/atomico/-/atomico-0.0.9.tgz#aec8f311eb8620c775eb8e5876c16a6dfda01f8c"
 
 bl@^1.0.0:
   version "1.2.2"

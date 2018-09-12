@@ -24,4 +24,39 @@ por defecto posee el logotipo de atomico y el estilo de base para el index.html
 
 ## Observaciones de dependencias
 
-Por defecto Atomico se recomienda mantenerse como una dependencia externa, ud puede prescindir de `cssthis-tag`, especialmente si trabajara directamente con shadow-dom
+Por defecto Atomico se recomienda mantenerlo como una dependencia externa, ud puede prescindir de `cssthis-tag`, especialmente si trabajara directamente con shadow-dom
+
+## package.json
+
+Los ficheros de salida del empaquetado se definen dentro de `package.json`.
+
+```json
+  "name": "atomico-starter-component",
+  "main": "dist/atomico-starter-component.js",
+  "umd:main": "dist/atomico-starter-component.umd.js",
+  "umd:es5": "dist/atomico-starter-component.es5.umd.js",
+  "module": "dist/atomico-starter-component.m.js",
+  "source": "src/index.js",
+```
+
+## package.json
+
+Los ficheros de salida del empaquetado se definen dentro de `package.json`.
+
+```json
+ "name": "atomico-starter-component",
+ "main": "dist/atomico-starter-component.js",
+ "umd:main": "dist/atomico-starter-component.umd.js",
+ "umd:es5": "dist/atomico-starter-component.es5.umd.js",
+ "module": "dist/atomico-starter-component.m.js",
+ "source": "src/index.js",
+```
+
+| Propiedad | Descripción |
+|-----------|-------------|
+| name | necesario para la salida de los ficheros `umd:*`|
+| main | permite generar un componente en salida **CJS** |
+| umd:main | permite generar un componente en salida **UMD** |
+| umd:es5 | permite generar un componente en salida **UMD** y **ES6** |
+| module | permite generar un componente en salida **ES** |
+| source | origen del componente |

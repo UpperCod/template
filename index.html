@@ -6,10 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Component</title>
     <link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
-    <!--init:require-->
-        <script src="https://unpkg.com/atomico@0.0.5/dist/atomico.umd.js"></script>
-        <script src="dist/atomico-starter-component.umd.js"></script>
-    <!--end:require-->
+    
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
@@ -27,11 +24,14 @@
         </div>
     </header>
     <div class="Preview box">
+        <h1>atomico-starter-component</h1>
+        <p>This is just an example, of atomic-starter-component previsualization</p>
         <div class="Preview frame">
-            <atomico-starter-component></atomico-starter-component>
+            <!--component-->
+            <atomico-starter-component emoji="🤓 👍 🔥 📦 🔮"></atomico-starter-component>
+            <atomico-starter-component emoji="😎 😜 🤔 💣 ☠️"></atomico-starter-component>
         </div>
         <div class="Preview content">
-            <h1>atomico-starter-component</h1>
 
             <p>This is a small skeleton to create distributable components based on <a href="https://github.com/uppercod/atomico">Atomico</a>.</p>
 
@@ -58,5 +58,10 @@ npm run build</pre>
             <p>By default Atomico is recommended to stay as an external dependency, you can do without <code>cssthis-tag</code>, especially if you work directly with shadow-dom.</p>
         </div>
     </div>
+    
+    <!--init:require-->
+    <script src="https://unpkg.com/atomico@0.0.9/dist/atomico.umd.js"></script>
+    <script src="dist/atomico-starter-component.umd.js"></script>
+    <!--end:require-->
 </body>
 </html>
