@@ -95,9 +95,9 @@ array-unique@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.2.1.tgz#a1d97ccafcbc2625cc70fadceb36a50c58b01a53"
 
-atomico@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/atomico/-/atomico-0.0.9.tgz#aec8f311eb8620c775eb8e5876c16a6dfda01f8c"
+atomico@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/atomico/-/atomico-0.1.0.tgz#db77f643f6370e744d9a97a27da6fbd97f2c5a8b"
 
 bl@^1.0.0:
   version "1.2.2"
@@ -1468,6 +1468,10 @@ rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.3.0:
   dependencies:
     estree-walker "^0.5.2"
     micromatch "^2.3.11"
+
+rollup-prepare@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-prepare/-/rollup-prepare-0.0.0.tgz#2fb7291fafbde5be279f78526f415ecac05186ab"
 
 rollup@^0.65.2:
   version "0.65.2"

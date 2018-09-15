@@ -18,7 +18,7 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "atomico": "^0.0.9"
+    "atomico": "^0.1.0"
   },
   "devDependencies": {
     "cssnano": "^4.1.0",
@@ -29,6 +29,7 @@
     "rollup-plugin-cssthis": "^0.1.1",
     "rollup-plugin-filesize": "^4.0.1",
     "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-terser": "1.0.1"
+    "rollup-plugin-terser": "1.0.1",
+    "rollup-prepare": "^0.0.0"
   }
 }

@@ -7,64 +7,28 @@ import cssthis from "rollup-plugin-cssthis";
 import cssnano from "cssnano";
 import pkg from "./package.json";
 import colors from "colors";
+import prepare from "rollup-prepare";
 
-let external = Object.keys(pkg.dependencies || {}),
-    globals = { atomico: "atomico" };
+let globals = { atomico: "atomico" };
 
 export default [
     {
-        input: pkg.source,
-        output: [
-            {
-                file: pkg.main,
-                format: "cjs",
-                sourcemap: true
-            },
-            {
-                file: pkg.module,
-                format: "es",
-                sourcemap: true
-            },
-            {
-                file: pkg["umd:main"],
-                format: "umd",
-                name: camelCase(pkg.name),
-                sourcemap: true,
-                globals
-            }
-        ],
-        external,
-        onwarn: logger,
+        ...prepare({
+            pkg,
+            ignore: ["umd:es5"],
+            globals
+        }),
         plugins: plugins(false)
     },
     {
-        input: pkg.source,
-        output: [
-            {
-                file: pkg["umd:es5"],
-                format: "umd",
-                name: camelCase(pkg.name),
-                sourcemap: true,
-                globals
-            }
-        ],
-        external,
-        onwarn: logger,
+        ...prepare({
+            pkg,
+            ignore: ["umd:main", "main", "module"],
+            globals
+        }),
         plugins: plugins(true)
     }
 ];
-
-function camelCase(string) {
-    return string.replace(/-+([\w])/g, (all, letter) => letter.toUpperCase());
-}
-/**
- * avoid log "X" type of rollup error
- */
-function logger(message, next) {
-    if (/MIXED_EXPORTS|MISSING_GLOBAL_NAME|MIXED_EXPORTS/.test(message.code))
-        return;
-    next(message);
-}
 /**
  * Returns the generic plugins to be used for packaging
  * @param {boolean} classes - lets you disable the transformation of classes
