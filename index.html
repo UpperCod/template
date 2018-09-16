@@ -5,60 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Component</title>
-    <link href="https://fonts.googleapis.com/css?family=Varela" rel="stylesheet">
-    
-    <link rel="stylesheet" href="static/style.css">
+    <style>
+    body{margin:0px;padding:0px}
+    </style>
 </head>
 <body>
-    <header class="Header box">
-        <a href="https://github.com/uppercod/atomico">
-        <img src="static/logo.png" alt="" width="180px">
-        </a>
-        <div>
-            <a href="https://github.com/uppercod/atomico">
-                <button class="Header link">🔗 Github Atomico</button>
-            </a>
-            <a href="https://github.com/uppercod/atomico-starter-component">
-                <button class="Header link">🔗 Github this component</button>
-            </a>
-        </div>
-    </header>
-    <div class="Preview box">
-        <h1>atomico-starter-component</h1>
-        <p>This is just an example, of atomic-starter-component previsualization</p>
-        <div class="Preview frame">
-            <!--component-->
-            <atomico-starter-component emoji="🤓 👍 🔥 📦 🔮"></atomico-starter-component>
-            <atomico-starter-component emoji="😎 😜 🤔 💣 ☠️"></atomico-starter-component>
-        </div>
-        <div class="Preview content">
-
-            <p>This is a small skeleton to create distributable components based on <a href="https://github.com/uppercod/atomico">Atomico</a>.</p>
-
-            <p>The component is packaged thanks to <code>rollup.config.js</code>, you can execute the commands</p>
-
-<pre>
-# alias rollup -c -w
-npm run watch
-# alias rollup -c
-npm run build</pre>
-
-            <h2>Directory observations</h2>
-
-            <h3>index.html</h3>
-
-            <p>It is recommended when packaging the component, print it inside the index.html.</p>
-
-            <h3>/static</h3>
-
-            <p>by default it has the atomic logo and the base style for the index.html.</p>
-
-            <h2>Dependency observations</h2>
-
-            <p>By default Atomico is recommended to stay as an external dependency, you can do without <code>cssthis-tag</code>, especially if you work directly with shadow-dom.</p>
-        </div>
-    </div>
-    
+    <!--component-->
+    <atomico-starter-component></atomico-starter-component>
     <!--init:require-->
     <script src="https://unpkg.com/atomico@0.1.0/dist/atomico.umd.js"></script>
     <script src="dist/atomico-starter-component.umd.js"></script>

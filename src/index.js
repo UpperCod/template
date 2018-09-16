@@ -1,31 +1,22 @@
 import { h, Element } from "atomico";
-import style from "cssthis-tag";
-import css from "./style.this.css";
+import style from "./style.this.css";
 
 export const TAG_NAME = "atomico-starter-component";
 
-export default class Tag extends Element {
+export class Tag extends Element {
     static get props() {
-        return ["emoji"];
-    }
-    elementMount(event) {
-        event.preventDefault();
-        let handler = () => {
-            let emoji = (this.props.emoji
-                ? this.props.emoji
-                : "🔥 🤷 🤔"
-            ).split(" ");
-            emoji = emoji[Math.floor(Math.random() * emoji.length)];
-            this.setState({ emoji });
-        };
-        setInterval(handler, 1000);
-        handler();
+        return ["hello"];
     }
     render() {
-        return <span>{this.state.emoji}</span>;
+        return (
+            <div class="box">
+                <div class="emoji">👋</div>
+                <div class="text">{this.props.hello || "😎"}</div>
+                <div class="beer">🍺</div>
+            </div>
+        );
     }
 }
 
+style(TAG_NAME);
 customElements.define(TAG_NAME, Tag);
-
-style(TAG_NAME)(css);

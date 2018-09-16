@@ -22,13 +22,9 @@ It is recommended when packaging the component, print it inside the index.html.
 by default it has the atomic logo and the base style for the index.html.
 
 
-## Dependency observations
-
-By default Atomico is recommended to stay as an external dependency, you can do without `cssthis-tag`, especially if you work directly with shadow-dom.
-
 ## package.json
 
-The output files of the package are defined within `package.json`.
+The output files of the package are defined within `package.json`, this is thanks to [rollup-prepare](https://github.com/uppercod/rollup-prepare).
 
 ```json
  "name": "atomico-starter-component",

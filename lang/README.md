@@ -22,10 +22,6 @@ Es recomendable al momento de empaquetar el componente, imprimirlo dentro del in
 por defecto posee el logotipo de atomico y el estilo de base para el index.html
 
 
-## Observaciones de dependencias
-
-Por defecto Atomico se recomienda mantenerlo como una dependencia externa, ud puede prescindir de `cssthis-tag`, especialmente si trabajara directamente con shadow-dom
-
 ## package.json
 
 Los ficheros de salida del empaquetado se definen dentro de `package.json`.
@@ -41,7 +37,7 @@ Los ficheros de salida del empaquetado se definen dentro de `package.json`.
 
 ## package.json
 
-Los ficheros de salida del empaquetado se definen dentro de `package.json`.
+Los ficheros de salida del empaquetado se definen dentro de `package.json`, esto es gracias a [rollup-prepare](https://github.com/uppercod/rollup-prepare).
 
 ```json
  "name": "atomico-starter-component",
