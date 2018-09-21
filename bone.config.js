@@ -8,7 +8,7 @@ export default {
         }
     ],
     onSubmit(data) {
-        data.$dist = data.__NAME__ = data.__NAME__.replace(/[^\w]+/g, "-");
+        data.$dist = data.__name__ = data.__name__.replace(/[^\w]+/g, "-");
         return data;
     }
 };
