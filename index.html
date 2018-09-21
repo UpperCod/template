@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Component</title>
+    <title>{{__name__}}</title>
     <style>
     body{margin:0px;padding:0px}
     </style>
 </head>
 <body>
     <!--component-->
-    <atomico-starter-component></atomico-starter-component>
+    <{{__name__}}></{{__name__}}>
     <!--init:require-->
     <script src="https://unpkg.com/atomico@0.1.0/dist/atomico.umd.js"></script>
-    <script src="dist/atomico-starter-component.umd.js"></script>
+    <script src="dist/{{__name__}}.umd.js"></script>
     <!--end:require-->
 </body>
 </html>

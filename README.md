@@ -1,4 +1,4 @@
-# atomico-starter-component
+# {{__name__}}
 
 This is a small skeleton to create distributable components based on [Atomico](https://github.com/uppercod/atomico).
 
@@ -10,17 +10,6 @@ npm run watch
 # alias rollup -c
 npm run build
 ```
-
-## Directory observations
-
-### index.html
-
-It is recommended when packaging the component, print it inside the index.html.
-
-### /static
-
-by default it has the atomic logo and the base style for the index.html.
-
 
 ## package.json
 

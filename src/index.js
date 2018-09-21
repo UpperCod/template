@@ -1,8 +1,6 @@
 import { h, Element } from "atomico";
 import style from "./style.this.css";
 
-export const TAG_NAME = "atomico-starter-component";
-
 export class Tag extends Element {
     static get props() {
         return ["hello"];
@@ -18,5 +16,5 @@ export class Tag extends Element {
     }
 }
 
-style(TAG_NAME);
-customElements.define(TAG_NAME, Tag);
+style("{{__name__}}");
+customElements.define("{{__name__}}", Tag);

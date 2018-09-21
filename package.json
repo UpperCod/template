@@ -1,17 +1,15 @@
 {
-  "name": "atomico-starter-component",
-  "version": "0.0.1",
-  "description": "This is a small skeleton to create distributable components based on Atomico",
-  "main": "dist/atomico-starter-component.js",
-  "umd:main": "dist/atomico-starter-component.umd.js",
-  "umd:es5": "dist/atomico-starter-component.es5.umd.js",
-  "module": "dist/atomico-starter-component.m.js",
+  "name": "{{__name__}}",
+  "version": "0.0.0",
+  "main": "dist/{{__name__}}.js",
+  "umd:main": "dist/{{__name__}}.umd.js",
+  "umd:es5": "dist/{{__name__}}.es5.umd.js",
+  "module": "dist/{{__name__}}.m.js",
   "source": "src/index.js",
-  "author": "Matias Trujillo Olivares",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/UpperCod/atomico-starter-component.git"
+    "url": "https://github.com/UpperCod/{{__name__}}.git"
   },
   "scripts": {
     "watch": "rollup -c -w",
