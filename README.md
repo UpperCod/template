@@ -16,11 +16,11 @@ npm run build
 The output files of the package are defined within `package.json`, this is thanks to [rollup-prepare](https://github.com/uppercod/rollup-prepare).
 
 ```json
- "name": "atomico-starter-component",
- "main": "dist/atomico-starter-component.js",
- "umd:main": "dist/atomico-starter-component.umd.js",
- "umd:es5": "dist/atomico-starter-component.es5.umd.js",
- "module": "dist/atomico-starter-component.m.js",
+ "name": "{{__name__}}",
+ "main": "dist/{{__name__}}.js",
+ "umd:main": "dist/{{__name__}}.umd.js",
+ "umd:es5": "dist/{{__name__}}.es5.umd.js",
+ "module": "dist/{{__name__}}.m.js",
  "source": "src/index.js",
 ```
 
