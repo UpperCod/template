@@ -5,13 +5,7 @@ import commonjs from "rollup-plugin-commonjs";
 import filesize from "rollup-plugin-filesize";
 import pkg from "./package.json";
 import prepare from "rollup-prepare";
-/**
- *
- * If you want to work with shadow Dom and css,
- * you can use postcss to return the minified css,
- * this will allow you to serve a better css
- * import postcss from "rollup-plugin-postcss";
- */
+
 import cssnano from "cssnano";
 import cssthis from "rollup-plugin-cssthis";
 

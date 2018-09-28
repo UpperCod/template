@@ -1,0 +1,28 @@
+:host {
+    font-size: 30px;
+}
+
+.box {
+    display: inline-flex;
+}
+
+.emoji {
+    animation: hello 1s alternate infinite;
+    transform-origin: 80% 80%;
+}
+
+.beer {
+    transform: scale(-1, 1);
+}
+
+@keyframes hello {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
