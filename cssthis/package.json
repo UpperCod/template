@@ -16,7 +16,7 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "atomico": "^0.3.1"
+    "atomico": "^0.3.2"
   },
   "globals": {
     "atomico": "atomico"
