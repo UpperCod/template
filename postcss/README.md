@@ -19,7 +19,7 @@ The output files of the package are defined within `package.json`, this is thank
  "name": "{{__name__}}",
  "main": "dist/{{__name__}}.js",
  "umd:main": "dist/{{__name__}}.umd.js",
- "umd:es5": "dist/{{__name__}}.es5.umd.js",
+ "iife": "dist/{{__name__}}.iife.js",
  "module": "dist/{{__name__}}.m.js",
  "source": "src/index.js",
 ```
@@ -29,6 +29,22 @@ The output files of the package are defined within `package.json`, this is thank
 | name | Necessary for the exit of the files type `umd:*`|
 | main | Allows to generate a component in output format **CJS** |
 | umd:main | Allows to generate a component in output format **UMD** |
-| umd:es5 | Allows to generate a component in output format **UMD** and **ES6** |
+| iife | Allows to generate a component in output format **IIFE** |
 | module | Allows to generate a component in output format **ES** |
 | source | component source file |
+
+## Component installation
+
+```html
+<body>
+    <{{__name__}}></{{__name__}}>
+    <!-- polyfill --> 
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+    <!-- size 1.7kB -->
+    <script src="https://unpkg.com/atomico@{{__version__}}/dist/atomico.umd.js"></script>
+    <!-- size 1.4kB -->
+    <script src="https://unpkg.com/{{__name__}}@0.0.0/dist/{{__name__}}.umd.js"></script>
+</body>
+```
+
+> The scripts can also load from the `<head>`.

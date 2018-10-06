@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "main": "dist/{{__name__}}.js",
   "umd:main": "dist/{{__name__}}.umd.js",
+  "iife": "dist/{{__name__}}.iife.js",
   "module": "dist/{{__name__}}.m.js",
   "source": "src/index.js",
   "license": "ISC",
