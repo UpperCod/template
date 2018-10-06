@@ -1,16 +1,18 @@
-import buble from "rollup-plugin-buble";
+import babel from "rollup-plugin-babel";
 import resolve from "rollup-plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
 import commonjs from "rollup-plugin-commonjs";
-import filesize from "rollup-plugin-filesize";
 import pkg from "./package.json";
 import prepare from "rollup-prepare";
 
 import cssnano from "cssnano";
 import cssthis from "rollup-plugin-cssthis";
 
-function plugins(classes = true) {
-    return [
+export default {
+    ...prepare({
+        pkg
+    }),
+    plugins: [
         commonjs({
             include: "node_modules/**"
         }),
@@ -19,31 +21,18 @@ function plugins(classes = true) {
             invoke: true,
             plugins: [cssnano]
         }),
-        buble({
-            jsx: "h",
-            transforms: {
-                classes
-            },
-            objectAssign: "Object.assign"
+        babel({
+            exclude: "node_modules/**",
+            plugins: [
+                [
+                    "@babel/plugin-transform-react-jsx",
+                    {
+                        pragma: "h"
+                    }
+                ],
+                "@babel/plugin-proposal-object-rest-spread"
+            ]
         }),
-        terser(),
-        filesize()
-    ];
-}
-
-export default [
-    {
-        ...prepare({
-            pkg,
-            ignore: ["umd:es5"]
-        }),
-        plugins: plugins(false)
-    },
-    {
-        ...prepare({
-            pkg,
-            ignore: ["umd:main", "main", "module"]
-        }),
-        plugins: plugins(true)
-    }
-];
+        terser()
+    ]
+};
