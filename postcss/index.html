@@ -12,9 +12,10 @@
 <body>
     <!--component-->
     <{{__name__}}></{{__name__}}>
-    <!--init:require-->
+    <!-- polyfill --> 
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+    <!-- require -->
     <script src="https://unpkg.com/atomico@{{__version__}}/dist/atomico.umd.js"></script>
     <script src="dist/{{__name__}}.umd.js"></script>
-    <!--end:require-->
 </body>
 </html>
