@@ -11,12 +11,12 @@ export class Tag extends Element {
     }
     render() {
         return (
-            <div class="box">
+            <host>
                 <style>{style}</style>
                 <div class="emoji">👋</div>
                 <div class="text">{this.props.hello || "😎"}</div>
                 <div class="beer">🍺</div>
-            </div>
+            </host>
         );
     }
 }
