@@ -30,7 +30,10 @@ export default {
                         pragma: "h"
                     }
                 ],
-                "@babel/plugin-proposal-object-rest-spread"
+                [
+                    "@babel/plugin-proposal-object-rest-spread",
+                    { loose: true, useBuiltIns: true }
+                ]
             ]
         }),
         terser()
