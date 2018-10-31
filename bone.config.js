@@ -18,7 +18,7 @@ export default {
         }
     ],
     onSubmit(data) {
-        data.__version__ = "0.5.0";
+        data.__version__ = "0.5.3";
         data.$source = data.__typecss__;
         data.$dist = data.__name__ = data.__name__.replace(/[^\w]+/g, "-");
         return data;
