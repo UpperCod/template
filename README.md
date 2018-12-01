@@ -1,4 +1,4 @@
-# Atomico.template
+# Template
 
 It is a template to start with Atomico, it is initialized thanks to **cli-bone**.
 
@@ -15,7 +15,7 @@ npm install -g cli-bone
 ## Run the script from github
 
 ```bash
-bone uppercod/atomico.template
+bone atomicojs/template
 ```
 
 ## Install dependencies from package.json

@@ -33,7 +33,8 @@ export default {
                 [
                     "@babel/plugin-proposal-object-rest-spread",
                     { loose: true, useBuiltIns: true }
-                ]
+                ],
+                ["@babel/plugin-proposal-class-properties", { loose: true }]
             ]
         }),
         terser()
